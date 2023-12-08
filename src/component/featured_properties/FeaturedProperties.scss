@@ -1,0 +1,42 @@
+$small-screen: 605px;
+$medium-screen: 875px;
+$large-screen: 1150px;
+
+
+
+
+
+.css-1aquho2-MuiTabs-indicator {
+    background-color: transparent!important;
+}
+
+.css-1wf8b0h-MuiTabs-flexContainer {
+    display: flex!important;
+    gap: 1rem!important;
+    padding: 1rem 2rem;
+
+    
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+
+
+
+
+
+
+@media (max-width: $large-screen) {
+    
+}
+
+@media (max-width: $medium-screen) {
+    
+}
+
+@media (max-width: $small-screen) {
+    
+}

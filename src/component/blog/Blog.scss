@@ -1,0 +1,105 @@
+.blog-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    background-color: #F7F7F7;
+
+    .blog-card-container {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 20px;
+
+        @media (max-width: 750px) {
+            grid-template-columns: repeat(1, 400px);
+        }        
+
+        .blog-card-item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            .blog-img {
+                position: relative;
+                overflow: hidden;
+
+                
+                img {
+                    transition: all 1s;
+                    width: 100%;
+                }
+
+                img:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+
+            .blog-info {
+                display: flex;
+                justify-content: center;
+                .blog-title {
+                    width: 75%;
+                    text-align: center;
+                }
+
+            }
+
+            .blog-button {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                align-items: center;
+            }
+
+            .blog-folder {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                position: absolute;
+                bottom: 110px;
+                left: 30%;
+                // right: 40%;
+                background-color: white;
+                padding: 0.5rem;
+                border-radius: 10px;
+                width: 140px;
+                
+                p {
+                    margin: 0;
+                }
+                
+
+                .folder-item {
+                    display: flex;
+                    gap: 3px;
+                }
+
+                @media (max-width: 990px) {
+                    bottom: 120px;
+                    left: 60px;
+                    width: 50%;
+                }
+
+                @media (max-width: 750px) {
+                    bottom: 110px;
+                    left: 120px;
+                    width: 120px;
+                }
+
+            }
+
+            
+            
+        }
+    }
+}

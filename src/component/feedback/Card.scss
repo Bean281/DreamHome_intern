@@ -1,0 +1,24 @@
+.card-feedback-container {
+    margin-top: 20px;
+    .box-feedback {
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .feedback-owner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .owner-name {
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}

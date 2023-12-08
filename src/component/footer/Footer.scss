@@ -1,0 +1,190 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1e;
+    padding-top: 5rem;
+
+    .footer-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 3rem;
+
+        @media (max-width: 940px) {
+            flex-direction: column;
+        }
+
+        .footer-button-item {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background-color: #fff5e0;
+            gap: 2rem;
+            
+            padding: 1rem;
+            border-radius: 15px;
+
+            @media (max-width: 940px) {
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+
+            .footer-button-content {
+                .footer-button-dis {
+                    font-size: 14px;
+                    padding-bottom: 1rem;
+                }
+            }
+
+            .footer-button-box {
+                position: absolute;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                background-color: #ffa920;
+                color: white;
+                width: 35%;
+                border-radius: 15px;
+                bottom: -15%;
+            }
+        }
+    }
+
+    .footer-content {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 5rem;
+        color: white;
+
+        @media (max-width: 940px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 670px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .footer-content-item {
+            width: 90%;
+            .fc-item-header {
+                font-size: 18px;
+            }
+        }
+
+        .address {
+            .adr-title {
+                color: #8e8e93;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .address-head {
+                font-weight: 600;
+            }
+        }
+
+        .contact {
+            .fc-contact-icon {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                padding-bottom: 1rem;
+
+                .contact_icon {
+                    font-size: 2rem;
+                }
+
+                .fc-contact-icon-dis {
+                    .fc-contact-dis-title {
+                        font-size: 13px;
+                        color: #8e8e93;
+                    }
+
+                    .fc-contact-dis-content {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .company {
+            ul {
+                padding: 0;
+                li {
+                    list-style: none;
+                    padding-bottom: 10px;
+                    color: #8e8e93;
+                    font-size: 15px;
+                }
+
+                li:hover {
+                    color: #ffa920;
+                }
+
+                li::before {
+                    content: "> ";
+                    font-weight: 600;
+                    padding-right: 10px;
+                    color: #ffa920;
+                }
+            }
+        }
+
+        .news {
+            p {
+                color: #F1FAEE;
+                font-size: 15px;
+            }
+
+            .news-input {
+                width: 90%;
+                height: 50px;
+            }
+
+            .fc-item-btn {
+                height: 50px;
+                border-radius: 5px;
+                margin-top: 5px;
+                width: 90%;
+                background-color: #8e8e93;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                font-weight: 600;
+
+            }
+
+            .fc-item-btn:hover {
+                background-color: #ffa920;
+            }
+
+            .checkbox-group {
+                display: flex!important;
+                align-items: flex-start!important;
+
+                label {
+
+                }
+            }
+        }
+    }
+
+    .footer-nav {
+    }
+
+    .footer-cp {
+        text-align: center;
+        color: #8e8e93;
+
+        b{
+            color: white;
+        }
+    }
+}

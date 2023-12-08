@@ -1,0 +1,160 @@
+// $color_1: #FFA920;
+// $color_2: white;
+// $font-family_1: "Font Awesome 5 Solid";
+// $background-color_1: white;
+// $background-color_2: #FFA920;
+
+// /* .submenu1 > li:hover {
+//      color: #FFA920;
+//      .dropdown {
+//           color: black;
+//      }
+// } */
+// /* For small screens (phones) */
+// /* For medium-sized screens (tablets) */
+// /* Styles for medium screens */
+// .nav-container {
+// 	padding: 1rem 1.5rem;
+// 	display: flex;
+// 	width: 100%;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+// 	.box-logo {
+// 		width: 197px;
+// 	}
+// }
+// .menu-container {
+// 	.main-menu {
+// 		display: flex;
+// 		justify-content: center;
+// 		gap: 2rem;
+// 		.title {
+// 			display: flex;
+// 			align-items: baseline;
+// 			gap: 0.5rem;
+// 			font-weight: 600;
+// 		}
+// 	}
+// }
+// .dropdown {
+// 	.title {
+// 		position: relative;
+// 	}
+// 	.submenu1 {
+// 		position: absolute;
+// 		background-color: $background-color_1;
+// 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+// 		opacity: 0;
+// 		visibility: hidden;
+// 		transition: all 1s ease;
+// 		transform: translateY(-11px);
+// 		z-index: 90;
+// 	}
+// 	.submenu2 {
+// 		position: absolute;
+// 		background-color: $background-color_1;
+// 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+// 		display: block;
+// 		opacity: 0;
+// 		visibility: hidden;
+// 		transition: all 1s ease;
+// 		transform: translateY(-11px);
+// 		left: 100%;
+// 		z-index: 90;
+// 		li {
+// 			display: block;
+// 			padding: 0.5rem 1rem;
+// 			width: 15rem;
+// 			text-align: left;
+// 		}
+// 	}
+// 	&:hover {
+// 		>.submenu1 {
+// 			cursor: pointer;
+// 			opacity: 1;
+// 			visibility: visible;
+// 			transform: translateY(27px);
+// 		}
+// 	}
+// }
+// .title {
+// 	&:hover {
+// 		color: $color_1;
+// 	}
+// }
+// .main-menu {
+// 	a {
+// 		&:hover {
+// 			color: $color_1;
+// 		}
+// 	}
+// }
+// .title-v2 {
+// 	&:hover {
+// 		>.submenu2 {
+// 			cursor: pointer;
+// 			opacity: 1;
+// 			display: block;
+// 			visibility: visible;
+// 			transform: translateY(27px);
+// 			cursor: pointer;
+// 			opacity: 1;
+// 			visibility: visible;
+// 			transform: translateY(-20px);
+// 		}
+// 	}
+// 	>.submenu2 {
+// 		position: absolute;
+// 		background-color: $background-color_1;
+// 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+// 		display: block;
+// 		opacity: 0;
+// 		visibility: hidden;
+// 		transition: all 500ms ease;
+// 		transform: translateY(-11px);
+// 	}
+// }
+// .submenu1 {
+// 	li {
+// 		display: block;
+// 		padding: 0.5rem 1rem;
+// 		width: 15rem;
+// 		text-align: left;
+// 	}
+// }
+// .title-sub {
+// 	display: flex;
+// 	justify-content: space-between;
+// }
+// .authenticate-container {
+// 	display: flex;
+// 	align-items: center;
+// 	gap: 20px;
+// 	.action {
+// 		display: flex;
+// 		align-items: center;
+// 		gap: 10px;
+// 	}
+// 	.sell-box {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		border-radius: 15px;
+// 		background-color: $background-color_2;
+// 		width: 11.5rem;
+// 		padding: 1rem 2rem;
+// 		font-weight: 600;
+// 		color: $color_2;
+// 	}
+// }
+// @media only screen and (max-width: 600px) {
+// 	.main-menu {
+// 		display: none;
+// 	}
+// 	.authenticate-container {
+// 		&:after {
+// 			font-family: $font-family_1;
+// 			content: "\f02a";
+// 		}
+// 	}
+// }

@@ -1,0 +1,13 @@
+.rent-properties {
+    margin-top: 4rem;
+    background-image: (url("../assets/bg-slider-1.png"));
+    padding-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+    .rent-dis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

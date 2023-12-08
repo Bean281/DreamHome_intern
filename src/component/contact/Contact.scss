@@ -1,0 +1,126 @@
+
+
+
+
+
+
+.contact-container {
+    background-image: url("../assets/bg-contact.png");
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+
+    @media (max-width: 670px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+    }
+
+    .contact-info {
+        width: 40%;
+
+        @media (max-width: 670px) {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+        .contact-header {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            margin: 0;
+        }
+        .contact-dis {
+            margin: 0;
+            color: gray;
+        }
+
+        .contact-icon-box {
+            .contact-icon-item {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                .contact_icon {
+                    font-size: 40px;
+                    color: gray;
+                }
+
+                .contact-icon-dis {
+                    .contact-icon-title {
+                        color: gray;
+                        font-size: 15px;
+                        margin-bottom: 16px;
+                    }
+
+                    .contact-icon-phone {
+                        font-size: 2rem;
+                        color: #FFA920;
+                        margin: 0;
+                    }
+
+                    .contact-icon-email {
+                        color: #FFA920;
+                        margin: 0;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        width: 30%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 2rem;
+        border-radius: 10px;
+
+        @media (max-width: 670px) {
+            width: 90%;
+            margin-bottom: 3rem;
+        }
+
+        .contact-form-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+
+            .contact-header-content {
+                .contact-header-title {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                .contact-header-dis {
+                    color: gray;
+                }
+            }
+
+            .contact_f_icon {
+                font-size: 2rem;
+                color: #FFA920;
+            }
+        }
+
+        .contact-form-input {
+            width: 100%!important;
+            height: 50px!important;
+        }
+
+        .input-place {
+            margin-top: 15px;
+        }
+       
+
+        .contact-form-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #FFA920;
+            width: 30%;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            p {margin: 0;}
+        }
+    }
+}

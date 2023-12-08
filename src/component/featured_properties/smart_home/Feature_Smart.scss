@@ -1,0 +1,27 @@
+$small-screen: 605px;
+$medium-screen: 875px;
+$large-screen: 1150px;
+
+.smarts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @media (max-width: $large-screen) {
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    }
+
+    @media (max-width: $medium-screen) {
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    }
+
+    @media (max-width: $small-screen) {
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    }
+}

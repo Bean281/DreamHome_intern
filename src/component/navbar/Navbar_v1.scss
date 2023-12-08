@@ -1,0 +1,155 @@
+.nav-container {
+    padding: 0;
+    width: 100vw;
+
+    .header {
+        background-color: white;
+
+        img {
+            width: 197px;
+        }
+    }
+}
+
+// @media (min-width: 900px)
+
+// nav item box
+
+.css-1t6c9ts {
+    justify-content: center !important;
+    gap: 20px;
+}
+
+.css-1q39md6-MuiButtonBase-root-MuiButton-root:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    color: black !important;
+}
+
+// color item
+.css-1q39md6-MuiButtonBase-root-MuiButton-root {
+    color: black !important;
+}
+
+//button color
+.css-1pz7awu-MuiButtonBase-root-MuiIconButton-root {
+    color: black !important;
+}
+
+//authenticate
+
+.authenticate-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: black;
+    }
+
+    .sell-box {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        background-color: #ffa920;
+        width: 8rem;
+        padding: 1rem 2rem;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+//menu_navbar
+
+.menu-container {
+    .main-menu {
+        display: flex;
+        gap: 2rem;
+
+        li {
+            list-style: none;
+        }
+
+        .dropdown {
+            text-decoration: none;
+
+            .submenu1 {
+                padding: 0;
+                position: absolute;
+                background-color: white;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                /* display: block;  */
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1s ease;
+                transform: translateY(-11px);
+                z-index: 90;
+
+                li {
+                    display: block;
+                    padding: 0.5rem 1rem;
+                    width: 15rem;
+                    text-align: left;
+                }
+
+                .title-v2 {
+                    .title-sub {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .submenu2 {
+                        padding: 0;
+                        position: absolute;
+                        background-color: white;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        display: block;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 500ms ease;
+                        transform: translateY(-11px);
+                        left: 260px;
+                    }
+                }
+
+                .title-v2:hover {
+                    .submenu2 {
+                        cursor: pointer;
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(-20px);
+                    }
+                }
+            }
+        }
+
+        .dropdown:hover {
+            .submenu1 {
+                cursor: pointer;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(27px);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: #ffa920;
+        }
+
+        .title {
+            color: black;
+            position: relative;
+        }
+
+        .title:hover {
+            color: #ffa920;
+        }
+    }
+}
