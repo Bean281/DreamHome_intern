@@ -18,7 +18,8 @@
         gap: 20px;
 
         @media (max-width: 750px) {
-            grid-template-columns: repeat(1, 400px);
+            display: flex;
+            flex-direction: column;
         }        
 
         .blog-card-item {
@@ -40,6 +41,11 @@
                 img:hover {
                     cursor: pointer;
                     transform: scale(1.2);
+                }
+
+                .blog-folder {
+                    position: absolute;
+                    bottom: 25px;
                 }
             }
 
@@ -77,6 +83,10 @@
                 p {
                     margin: 0;
                 }
+
+                @media (max-width: 750px) {
+                    grid-template-columns: repeat(1, 400px);
+                } 
                 
 
                 .folder-item {

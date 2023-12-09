@@ -3,12 +3,16 @@ $medium-screen: 875px;
 $large-screen: 1150px;
 
 .banner-container {
-    padding: 5rem ;
+    padding: 0 ;
     height: 250px;
     margin-top: 5rem;
     position: relative;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
+
+    h3 {
+        padding: 0 4rem;
+    }
 
     
 @media (max-width: $large-screen) {

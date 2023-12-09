@@ -59,7 +59,7 @@ export default function FeaturedProperties() {
     <Box sx={{ width: '100%', display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center" }}>
         <h1>Featured properties</h1>
         <p style={{width:"80%", textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo</p>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', width: '50%' }}>
         <Tabs value={value}
         onChange={handleChange}
         variant="scrollable"

@@ -8,7 +8,8 @@ $breakpoint-x-large: 1200px;
     background-image: (url("../assets/bg-slider-1.png"));
     height: 110vh;
     width: 100%;
-    padding-right: 50px;
+    padding-bottom: 8rem;
+    
 
     .main {
         position: relative;
@@ -16,6 +17,18 @@ $breakpoint-x-large: 1200px;
             padding-top: 200px;
             padding-left: 2rem;
             width: 100%;
+            @media (max-width: $breakpoint-small) {
+                width: 90%;
+            }
+        
+            @media (max-width: $breakpoint-medium) {
+                width: 90%;
+            }
+        
+            @media (min-width: $breakpoint-large) {
+                width: 100%;
+            }
+
             .content-title {
                 font-size: 60px;
                 display: flex;
@@ -50,11 +63,11 @@ $breakpoint-x-large: 1200px;
                 padding-bottom: 200px;
 
                 @media (min-width: $breakpoint-small) {
-                    width: 100%;
+                    width: 90%;
                 }
 
                 @media (min-width: $breakpoint-medium) {
-                    width: 100%;
+                    width: 90%;
                 }
 
                 @media (min-width: $breakpoint-large) {
@@ -85,6 +98,10 @@ $breakpoint-x-large: 1200px;
                     padding: 0.75rem 2rem;
                     font-size: 18px;
                     font-weight: 600;
+                }
+
+                @media (max-width: 422px) {
+                    top: 593px!important;
                 }
 
                 @media (max-width: $breakpoint-small) {
@@ -138,7 +155,7 @@ $breakpoint-x-large: 1200px;
 
                     @media (max-width: $breakpoint-medium) {
                         flex-direction: column;
-                        width: 85%;
+                        width: 80%;
                         .input {
                             height: 55px;
                             width: 100%;
